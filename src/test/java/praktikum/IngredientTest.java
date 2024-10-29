@@ -29,6 +29,6 @@ public class IngredientTest {
     @Test
     public void checkIngredientMethodGetType() {
         Ingredient ingredient = new Ingredient(IngredientType.SAUCE, INGREDIENT_NAME, INGREDIENT_PRICE);
-        assertEquals("Тип ингредиента не совпадает", IngredientType.SAUCE, IngredientType.valueOf("SAUCE"));
+        assertEquals("Тип ингредиента не совпадает", IngredientType.SAUCE, ingredient.getType());
     }
 }
