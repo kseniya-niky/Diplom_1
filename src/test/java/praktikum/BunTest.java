@@ -15,6 +15,6 @@ public class BunTest {
     @Test
     public void checkBunMethodGetPrice() {
         Bun bun = new Bun(Constants.BUN_NAME, Constants.BUN_PRICE);
-        assertEquals("Объект bun создан с другой ценой", Constants.BUN_PRICE, bun.getPrice(), 0);
+        assertEquals("Объект bun создан с другой ценой", Constants.BUN_PRICE, bun.getPrice(), Constants.DELTA);
     }
 }
